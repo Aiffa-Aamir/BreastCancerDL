@@ -1,4 +1,5 @@
 🧠 Breast Cancer Detection Using Deep Learning
+
 📌 Problem Statement
 Breast cancer is one of the most common cancers globally. Early and accurate detection is critical to improving survival rates. Traditional diagnostic techniques are often time-consuming, subjective, and limited by human error. This project aims to automate and improve the accuracy of breast cancer diagnosis using a deep learning-based image classification pipeline.
 
@@ -17,9 +18,11 @@ Two classes: benign, malignant
 Substantial class imbalance addressed using class weights
 
 🧪 Methodology / Pipeline
+
 This project follows a structured deep learning pipeline:
 
 1. Data Loading and Preprocessing
+   
 Image files are read and resized to a standard 50x50x3 shape.
 
 Labels are encoded into binary format.
@@ -29,9 +32,11 @@ Train/validation/test split is performed.
 Class imbalance is addressed using class_weight.
 
 2. Data Augmentation
+
 Techniques such as rotation, flipping, and zooming are applied using ImageDataGenerator to increase data diversity and reduce overfitting.
 
 3. Model Building
+   
 A custom CNN architecture is used:
 
 Convolutional layers with ReLU activation
@@ -43,6 +48,7 @@ Dropout for regularization
 Dense output layer with sigmoid activation
 
 4. Model Training
+   
 Trained with binary cross-entropy loss
 
 Adam optimizer
@@ -50,6 +56,7 @@ Adam optimizer
 EarlyStopping and ReduceLROnPlateau callbacks used to optimize training
 
 5. Evaluation
+   
 Model is evaluated on the test set using:
 
 Accuracy
@@ -61,6 +68,7 @@ Confusion Matrix
 ROC curve and AUC score are also plotted to evaluate performance
 
 ⚙️ Requirements
+
 Install the required dependencies with:
 
 bash
@@ -77,7 +85,9 @@ numpy
 pandas
 matplotlib
 scikit-learn
+
 🚀 Results
+
 Test Accuracy: ~90%
 
 AUC Score: 0.96+
@@ -85,6 +95,7 @@ AUC Score: 0.96+
 The model generalizes well and performs competitively with state-of-the-art methods.
 
 🔍 Key Learnings
+
 Handling class imbalance is crucial in medical imaging.
 
 Data augmentation significantly improves generalization.
@@ -92,6 +103,7 @@ Data augmentation significantly improves generalization.
 Simpler CNN architectures can still yield high performance with proper tuning.
 
 📘 How to Use
+
 Clone the repository.
 
 Download and extract the dataset into the data/ directory.
