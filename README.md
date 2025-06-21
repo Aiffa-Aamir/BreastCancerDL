@@ -1,9 +1,11 @@
 🧠 Breast Cancer Detection Using Deep Learning
 
 📌 Problem Statement
+
 Breast cancer is one of the most common cancers globally. Early and accurate detection is critical to improving survival rates. Traditional diagnostic techniques are often time-consuming, subjective, and limited by human error. This project aims to automate and improve the accuracy of breast cancer diagnosis using a deep learning-based image classification pipeline.
 
 📂 Dataset
+
 We use the Breast Histopathology Images dataset, which includes high-resolution histology images of breast tissue. Each image is labeled as either:
 
 Benign: Non-cancerous
